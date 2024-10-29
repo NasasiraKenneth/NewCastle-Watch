@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/rest"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/NewcastleWatch"
+        android:text="Newcastle Watch"
+        android:textSize="40dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/letter"
+        android:textStyle="bold"
+        android:layout_marginTop="45dp">
+
+    </TextView>
+
+
+
+    <ImageView
+        android:id="@+id/image_added"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="130dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/diagnosis_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diagnosed as:"
+        android:textColor="@color/letter"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="420dp"/>
+
+    <TextView
+        android:id="@+id/diagnosis_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="460dp"/>
+
+    <TextView
+        android:id="@+id/confidence_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confidence:"
+        android:textColor="@color/letter"
+        android:textSize="20sp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="420dp"/>
+
+    <TextView
+        android:id="@+id/confidence_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="460dp"/>
+
+
+
+    <ImageView
+        android:id="@+id/icon_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/camera"
+        android:layout_marginTop="520dp"
+        android:layout_marginRight="180dp"/>
+
+    <ImageView
+        android:id="@+id/add_image"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/add_image"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="180dp"/>
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame_layout"/>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomAppBar"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="50dp"
+        tools:ignore="BottomAppBar">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottomNavView"
+            android:layout_marginEnd="10dp"
+            app:labelVisibilityMode="labeled"
+            android:background="@android:color/transparent"
+            app:menu="@menu/bottom_menu"/>
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
